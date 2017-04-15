@@ -12,8 +12,9 @@ namespace Ejercicio_3
         {
             string entrada;
             int numero = 0;
-            int contador = 1;
+            int contador=1;
             int subContador=1;
+            int a=2;
 
             Console.Title = "Ejercicio Nro. #03";
 
@@ -28,29 +29,33 @@ namespace Ejercicio_3
 
             Console.WriteLine("Los numeros primos hasta el numero introducido son: ");
 
-            while(contador<=numero)
+            while(contador < numero)
             {
-                if(subContador <= contador)
+                if (subContador < 10 && contador % subContador == 0 && subContador!=contador)
                 {
-                    if(contador%subContador != 0)
+                    a++;
+                }
+                if (subContador == 9 && a == 2)
+                {
+                    subContador = 1;
+                    
+                    Console.Write(contador+" - ");
+                    contador++;
+                }
+                else
+                {
+                    if(subContador==9 && a!=2)
                     {
-                        subContador++;
-                    }
-                    else
-                    {
+                        a = 2;
                         contador++;
                         subContador = 1;
                     }
                 }
-                if(subContador == (contador))
-                {
-                    Console.WriteLine(contador);
-                    contador++;
-                    subContador = 1;
-                }
+                subContador++;
             }
 
-            Console.ReadLine();
+            Console.WriteLine("Presione una tecla para finalizar...");
+            Console.ReadKey();
         }
     }
 }

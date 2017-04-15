@@ -21,7 +21,7 @@ namespace Ejercicio_11
 
             for(contador=0 ; contador<10 ; contador++)
             {
-                Console.WriteLine("Ingrese un numero (entre -100 y 100 inclusive) [" + contador + "/9].");
+                Console.WriteLine("Ingrese un numero (entre -100 y 100 inclusive) [{0} /10].", contador+1);
                 entrada = Console.ReadLine();
 
                 while(!int.TryParse(entrada , out numero) || !Validacion.validar(-100 , numero , 100))
@@ -58,7 +58,6 @@ namespace Ejercicio_11
 
             Console.WriteLine("Pulse una tecla para finalizar...");
             Console.ReadKey();
-
         }
     }
 }

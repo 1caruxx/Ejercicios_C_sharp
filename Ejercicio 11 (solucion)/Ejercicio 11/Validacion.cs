@@ -8,7 +8,6 @@ namespace Ejercicio_11
 {
     class Validacion
     {
-
         public static bool validar(int minimo , int numero , int maximo)
         {
             if(numero>=minimo && numero<=maximo)

@@ -6,12 +6,21 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_14
 {
-    class Calculo_de_area
+    public class Calculo_de_area
     {
         public static double calcularCuadrado(double medida)
         {
-            medida = medida * medida;
-            return medida;
+            return medida*medida;
+        }
+
+        public static double calcularTriangulo(double baseDelTriangulo , double alturaDelTriangulo)
+        {
+            return (baseDelTriangulo * alturaDelTriangulo)/2;
+        }
+
+        public static double calcularCirculo(double radio)
+        {
+            return Math.PI * (radio*radio);
         }
     }
 }

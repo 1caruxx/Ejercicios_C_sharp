@@ -4,33 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_9
+namespace Ejercicio_10
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Title = "Ejercicio Nro. #09";
+            Console.Title = "Ejercicio Nro. #10";
 
             string entrada;
-            int altura = 0;
+            int numero;
             int contador = 0;
-            int subContador = -1;
+            int subcontador = -1;
+            int espacios;
 
-            Console.WriteLine("Ingrese la altura de la piramide (tiene que ser >0).");
+            Console.WriteLine("Ingrese un numero (Tiene que ser mayor >0).");
             entrada = Console.ReadLine();
 
-            while(!int.TryParse(entrada , out altura) || altura<=0)
+            while(!int.TryParse(entrada , out numero))
             {
-                Console.WriteLine("Error, reingrese.");
+                Console.WriteLine("Error, reingrese...");
                 entrada = Console.ReadLine();
             }
 
-            for(contador=0 ; contador<altura ; contador++)
+            espacios = numero;
+
+            for(contador=0 ; contador<numero ; contador++)
             {
-                for(subContador=-1 ; subContador<contador ; subContador++)
+               
+                for (espacios=numero-contador; espacios>0; espacios--)
                 {
-                    if(subContador == -1)
+                    Console.Write(" ");
+                }
+
+                for(subcontador=-1; subcontador<contador; subcontador++)
+                {
+                    if(subcontador==-1)
                     {
                         Console.Write("*");
                     }
@@ -38,10 +47,8 @@ namespace Ejercicio_9
                     {
                         Console.Write("**");
                     }
-                    
                 }
                 Console.Write("\n");
-                subContador = -1;
             }
 
             Console.WriteLine("Presione una tecla para finalizar...");

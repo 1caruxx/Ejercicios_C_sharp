@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_14
 {
-    class Validacion
+    public class Validacion
     {
         public static bool validar(int minimo, int numero, int maximo)
         {

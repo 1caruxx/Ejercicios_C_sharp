@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{014B06E0-9FEF-4BC4-9FDF-E228CF90F043}</ProjectGuid>
+    <ProjectGuid>{687D58E3-BFA8-4D70-9398-5115AD61A54E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Proyecto_4</RootNamespace>
-    <AssemblyName>Proyecto 4</AssemblyName>
+    <RootNamespace>Ejercicio_17</RootNamespace>
+    <AssemblyName>Ejercicio 17</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cuenta.cs" />
+    <Compile Include="eTipoInteres.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
