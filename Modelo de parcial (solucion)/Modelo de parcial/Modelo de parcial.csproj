@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CD1A09E-9A05-492A-A0E3-851DC46D340A}</ProjectGuid>
+    <ProjectGuid>{8B450E32-FE10-4D10-963A-1C08E9730840}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio_26</RootNamespace>
-    <AssemblyName>Ejercicio 26</AssemblyName>
+    <RootNamespace>Modelo_de_parcial</RootNamespace>
+    <AssemblyName>Modelo de parcial</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cola.cs" />
-    <Compile Include="Pila.cs" />
+    <Compile Include="Boligrafo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CD1A09E-9A05-492A-A0E3-851DC46D340A}</ProjectGuid>
+    <ProjectGuid>{6AABA1C8-9081-41A1-8D4F-9EF80E352A43}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio_26</RootNamespace>
-    <AssemblyName>Ejercicio 26</AssemblyName>
+    <RootNamespace>Ejercicio_30</RootNamespace>
+    <AssemblyName>Ejercicio 30</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cola.cs" />
-    <Compile Include="Pila.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
