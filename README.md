@@ -1,6 +1,6 @@
 # Ejercicios C#
 
-Este repositorio contiene la resolucion de los ejercicios de la [guia](./Guía de Ejercicios.pdf).
+Este repositorio contiene la resolucion de los ejercicios de la [guia](https://github.com/1caruxx/Ejercicios_C_sharp/blob/master/Gu%C3%ADa%20de%20Ejercicios.pdf).
 
 ## Lenguajes
 
